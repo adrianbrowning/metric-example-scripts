@@ -1,0 +1,19 @@
+{
+  "name": "metrics-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-proxy-agent": "^4.0.1",
+    "magic-metrics-tool": "https://solutions.tealium.net/hosted/abrowning/magic-metrics-tool-0.1.0.tgz"
+  },
+  "devDependencies": {
+    "underscore": "^1.12.0"
+  }
+}
