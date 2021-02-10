@@ -1,7 +1,7 @@
 const {
         reportHandler,
         constants: {DATABASE_TYPES},
-        utils: {isEmpty, date}
+        utils: {formattedDate}
       } = require("magic-metrics-tool");
 const _ = require("underscore");
 
@@ -183,7 +183,7 @@ const profileChecker = async function checkProfile(
   }
 };
 reportHandler({
-    logName : `all_profiles_validation_${date}`,
+    logName : `all_profiles_validation_${formattedDate}`,
     checkProfile : profileChecker,
     dbDataTypes : {
       msg : DATABASE_TYPES.TEXT,

@@ -49,9 +49,7 @@ reportHandler({
     dbDataTypes : {
       alias_name : DATABASE_TYPES.TEXT,
       display_name : DATABASE_TYPES.TEXT,
-    },
-    agent: new HttpProxyAgent("http://50.18.187.169:3128"),
-    dropDB:true,
+    }
   }
 );
 

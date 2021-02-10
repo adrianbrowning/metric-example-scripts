@@ -1,7 +1,7 @@
 const {
         reportHandler,
         constants: {DATABASE_TYPES},
-        utils: {isEmpty, date}
+        utils: {isEmpty}
       } = require("magic-metrics-tool");
 const _ = require("underscore");
 

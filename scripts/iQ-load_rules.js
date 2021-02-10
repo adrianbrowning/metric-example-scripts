@@ -1,7 +1,7 @@
 const {
         reportHandler,
         constants: {DATABASE_TYPES},
-        utils: {isEmpty, date}
+        utils: {isEmpty}
       } = require("magic-metrics-tool");
 
 const profileChecker = async function checkProfile(
@@ -38,9 +38,14 @@ const profileChecker = async function checkProfile(
   }
 };
 reportHandler({
-    logName : `<>`,
+    logName : `load_rules`,
     checkProfile : profileChecker,
-    dbDataTypes : {}
+    dbDataTypes : {
+      uid: DATABASE_TYPES.TEXT,
+      ors: DATABASE_TYPES.INTEGER,
+      ands: DATABASE_TYPES.INTEGER,
+      status: DATABASE_TYPES.TEXT
+    }
   }
 );
 

@@ -1,7 +1,6 @@
 const {
         reportHandler,
         constants: {DATABASE_TYPES},
-        utils: {isEmpty, date}
       } = require("magic-metrics-tool");
 const _ = require("underscore");
 
@@ -19,8 +18,6 @@ const profileChecker = async function checkProfile(
 
     const missing_from_get_profiles = _.difference(sorted_get_profiles, sorted_all_profiles);
     const missing_from_all_profiles = _.difference(sorted_all_profiles,sorted_get_profiles);
-
-    // if (missing_from_get_profiles.length ===0 && missing_from_all_profiles.length === 0) return resolve();
 
     record({
       account,

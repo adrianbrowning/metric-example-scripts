@@ -1,7 +1,7 @@
 const {
         reportHandler,
         constants:{DATABASE_TYPES},
-        utils: {isEmpty, date}
+        utils: {isEmpty, formattedDateTime}
       } = require("magic-metrics-tool");
 
 const active = "active";
@@ -50,7 +50,7 @@ const profileChecker = async function checkProfile(
 };
 
 reportHandler({
-    logName : "extension_count_"+date,
+    logName : "extension_count_"+formattedDateTime,
     useLocal: true,
     checkProfile : profileChecker,
     dbDataTypes : {
