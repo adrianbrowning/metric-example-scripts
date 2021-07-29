@@ -10,8 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "http-proxy-agent": "^4.0.1",
-    "magic-metrics-tool": "https://solutions.tealium.net/hosted/abrowning/magic-metrics-tool-0.1.0.tgz"
+    "magic-metrics-tool": "https://solutions.tealium.net/hosted/abrowning/magic-metrics-tool-0.1.2.tgz"
   },
   "devDependencies": {
     "underscore": "^1.12.0"
